@@ -1,16 +1,36 @@
 {
   "name": "automation-js-basic",
+  "type": "module",
   "version": "1.0.0",
-  "description": "project for automation js course",
+  "description": "unit testing example",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "lint": "eslint ./ --fix --format json --output-file report.json",
+    "coverage": "c8 npm test",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
     "url": "https://git.epam.com/vadim_scherbakov/automation-js-basic.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Vadim_Scherabkov@epam.com",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsdoc": "^39.6.8",
+    "eslint-plugin-prefer-arrow": "^1.2.3"
+  },
+  "dependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "c8": "^7.13.0",
+    "chai": "^4.3.7",
+    "husky": "^8.0.3",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
+  }
 }
