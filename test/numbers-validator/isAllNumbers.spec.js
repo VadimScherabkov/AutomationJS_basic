@@ -1,8 +1,8 @@
-import NumbersValidator from '../../app/numbers_validator.js';
 import {expect} from 'chai';
-import {describe, beforeEach, it} from 'mocha';
+import {beforeEach, describe, it} from 'mocha';
+import NumbersValidator from '../../app/numbers_validator.js';
 
-describe('isAllNumbers', () => {
+describe('isAllNumbers positive tests', () => {
   let validator;
 
   beforeEach(() => {
@@ -14,18 +14,42 @@ describe('isAllNumbers', () => {
   });
 
   it('should return true if it is an array of numbers', () => {
-    const arrayOfNumbers = [5, 2, 6, 11, 22];
-    const isAllNumbersArray = validator.isAllNumbers(arrayOfNumbers);
-    console.log(isAllNumbersArray);
+    const randomArray = Array.from({length: 5}, () =>
+      Math.floor(Math.random() * 50),
+    );
+    const isAllNumbersArray = validator.isAllNumbers(randomArray);
 
     expect(isAllNumbersArray).to.be.true;
   });
+});
 
-  it('should return false if it is not an array of numbers', () => {
-    const notArray = 'text';
+describe('isAllNumbers negative tests', () => {
+  let validator;
 
-    expect(() => {
-      validator.isAllNumbers(notArray);
-    }).to.throw('[text] is not an array');
+  const nonArray = [true, 'string', null, undefined];
+  const nonNumbersArray = [[true], ['string'], [null], [undefined]];
+
+  beforeEach(() => {
+    validator = new NumbersValidator();
+  });
+
+  afterEach(() => {
+    validator = null;
+  });
+
+  nonArray.forEach((element) => {
+    it('should return false if it is not an array', () => {
+      expect(() => {
+        validator.isAllNumbers(element[0]);
+      }).to.throw(`[${element[0]}] is not an array`);
+    });
+  });
+
+  nonNumbersArray.forEach((element) => {
+    it('should return false if it is not an array of numbers', () => {
+      expect(() => {
+        validator.isAllNumbers(element[0]);
+      }).to.throw(`[${element[0]}] is not an array`);
+    });
   });
 });

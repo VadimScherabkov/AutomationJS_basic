@@ -1,4 +1,3 @@
-/* eslint-disable valid-jsdoc */
 /* eslint-disable require-jsdoc */
 /**
  * A simple class containg methods for validating number
@@ -20,7 +19,6 @@ export default class NumbersValidator {
   isNumberEven(number) {
     const typeofVariable = typeof number;
     if (typeofVariable !== 'number') {
-      // eslint-disable-next-line max-len
       throw new Error(`[${number}] is not of type "Number" it is of type "${typeofVariable}"`);
     } else {
       return number % 2 === 0;
@@ -53,7 +51,7 @@ export default class NumbersValidator {
 
   /**
    * Check if passed value is integer
-   * @param n - value
+   * @param {number} n - value
    * @return {boolean} true if value is integer
    */
   isInteger(n) {
