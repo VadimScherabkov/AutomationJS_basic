@@ -13,8 +13,8 @@ describe('isInteger positive tests', () => {
     validator = null;
   });
 
+  const randomNumber = Math.floor(Math.random() * 201) - 100;
   it('should return true if positive or negative number is provided', () => {
-    const randomNumber = Math.floor(Math.random() * 201) - 100;
     const validatingResult = validator.isInteger(randomNumber);
 
     expect(validatingResult).to.be.equal(true);
@@ -30,8 +30,6 @@ describe('isInteger positive tests', () => {
 describe('isInteger negative tests', () => {
   let validator;
 
-  const nonNumbersArray = [[true], ['string'], [null], [undefined], []];
-
   beforeEach(() => {
     validator = new NumbersValidator();
   });
@@ -40,16 +38,16 @@ describe('isInteger negative tests', () => {
     validator = null;
   });
 
-  nonNumbersArray.forEach((element) => {
-    it('should throw an error if non - number is provided', () => {
+  const nonNumbersArray = [true, 'string', null, undefined, []];
+  it('should throw an error if non - number is provided', () => {
+    nonNumbersArray.forEach((element) => {
       expect(() => validator.isInteger(element))
           .to.throw(`[${element}] is not a number`);
     });
   });
 
+  const randomFloat = (Math.random() * (10 + 10) - 10).toFixed(1);
   it('should return false if fractional number is provided', () => {
-    const randomFloat = (Math.random() * (10 + 10) - 10).toFixed(1);
-
     expect(() => validator.isInteger(randomFloat))
         .to.throw(`[${randomFloat}] is not a number`);
   });

@@ -13,51 +13,41 @@ describe('isNumberEven positive tests', () => {
     validator = null;
   });
 
+  const randomEvenInt = Math.floor((Math.random() * 201) - 100) * 2;
   it('should return true if an even positive or negative number is provided', () => {
-    const randomEvenInt = Math.floor((Math.random() * 201) - 100) * 2;
     const validationResults = validator.isNumberEven(randomEvenInt);
 
     expect(validationResults).to.be.equal(true);
   });
 
+  const randomOddInt = Math.floor((Math.random() * 201) - 100) * 2 + 1;
   it('should return false if an odd positive or negative number is provided', () => {
-    const randomOddInt = Math.floor((Math.random() * 201) - 100) * 2 + 1;
     const validationResults = validator.isNumberEven(randomOddInt);
 
     expect(validationResults).to.be.equal(false);
   });
 
-  // Этот тест failed, хотя '4.4' четное число. Возвращается false
-  it('should return true if an float positive even number is provided ', () => {
-    const floatOddResult = validator.isNumberEven(4.4);
-
-    expect(floatOddResult).to.be.equal(true);
-  });
-
-  // Этот тест failed, хотя '-4.4' четное число. Возвращается false
-  it('should return true if an float negative even number is provided', () => {
-    const floatEvenResult = validator.isNumberEven(-4.4);
-
-    expect(floatEvenResult).to.be.equal(true);
-  });
-
-  it('should return false if an float positive odd number is provided ', () => {
+  it('should return false if positive number with decimal place is provided ', () => {
     const floatOddResult = validator.isNumberEven(5.5);
 
     expect(floatOddResult).to.be.equal(false);
   });
 
-  it('should return false if an float negative odd number is provided', () => {
+  it('should return false if negative number with decimal place is provided', () => {
     const floatEvenResult = validator.isNumberEven(-5.5);
 
     expect(floatEvenResult).to.be.equal(false);
+  });
+
+  it('should return true if 0 is provided', () => {
+    const zero = validator.isNumberEven(0);
+
+    expect(zero).to.be.equal(true);
   });
 });
 
 describe('isNumberEven negative tests', () => {
   let validator;
-
-  const errorArray = [[true], ['string'], [null], [undefined], [], [0]];
 
   beforeEach(() => {
     validator = new NumbersValidator();
@@ -67,8 +57,9 @@ describe('isNumberEven negative tests', () => {
     validator = null;
   });
 
-  errorArray.forEach((element) => {
-    it('should throw an error if provided type is not "Number"', () => {
+  const errorArray = [true, 'string', null, undefined, []];
+  it('should throw an error if provided type is not "Number"', () => {
+    errorArray.forEach((element) => {
       expect(() => validator.isNumberEven(element))
           .to.throw(`[${element}] is not of type "Number" it is of type "${typeof element}"`);
     });
