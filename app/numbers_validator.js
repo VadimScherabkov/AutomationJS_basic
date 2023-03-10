@@ -1,12 +1,11 @@
-/* eslint-disable require-jsdoc */
 /**
- * A simple class containg methods for validating number
+ * A simple class contains methods for validating number
  *
  * @class NumbersValidator
  */
 export default class NumbersValidator {
   /**
-   * Creates an instace of NumbersValidator.
+   * Creates an instance of NumbersValidator.
    * @memberof NumbersValidator
    */
   constructor() {
@@ -26,10 +25,9 @@ export default class NumbersValidator {
   };
 
   /**
-   * @param {Array<Number>} arrayOfNumbers array of numbers to go through
-   * @return {Array<Number>} array of even numbers
+   * @param {Array} arrayOfNumbers array of numbers to go through
+   * @return {Array} array of even numbers
    */
-
   getEvenNumbersFromArray(arrayOfNumbers) {
     if (Array.isArray(arrayOfNumbers) &&
     arrayOfNumbers.every((item) => typeof item === 'number')) {

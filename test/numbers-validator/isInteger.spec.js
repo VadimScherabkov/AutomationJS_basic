@@ -2,7 +2,7 @@ import {expect} from 'chai';
 import {beforeEach, describe, it} from 'mocha';
 import NumbersValidator from '../../app/numbers_validator.js';
 
-describe('isInteger positive test', () => {
+describe('isInteger positive tests', () => {
   let validator;
 
   beforeEach(() => {
@@ -13,18 +13,24 @@ describe('isInteger positive test', () => {
     validator = null;
   });
 
-  it('should return true when provided with a number', () => {
+  it('should return true if positive or negative number is provided', () => {
     const randomNumber = Math.floor(Math.random() * 201) - 100;
     const validatingResult = validator.isInteger(randomNumber);
 
     expect(validatingResult).to.be.equal(true);
   });
+
+  it('should return true if zero is provided', () => {
+    const zero = validator.isInteger(0);
+
+    expect(zero).to.be.true;
+  });
 });
 
-describe('isInteger negative test', () => {
+describe('isInteger negative tests', () => {
   let validator;
 
-  const nonNumbersArray = [[true], ['string'], [null], [undefined]];
+  const nonNumbersArray = [[true], ['string'], [null], [undefined], []];
 
   beforeEach(() => {
     validator = new NumbersValidator();
@@ -35,18 +41,16 @@ describe('isInteger negative test', () => {
   });
 
   nonNumbersArray.forEach((element) => {
-    it('should throw an error when provide not a number', () => {
-      expect(() => {
-        validator.isInteger(element[0]);
-      }).to.throw(`[${element[0]}] is not a number`);
+    it('should throw an error if non - number is provided', () => {
+      expect(() => validator.isInteger(element))
+          .to.throw(`[${element}] is not a number`);
     });
   });
 
-  it('should return false when provided with fractional number', () => {
+  it('should return false if fractional number is provided', () => {
     const randomFloat = (Math.random() * (10 + 10) - 10).toFixed(1);
 
-    expect(() => {
-      validator.isInteger(randomFloat);
-    }).to.throw(`[${randomFloat}] is not a number`);
+    expect(() => validator.isInteger(randomFloat))
+        .to.throw(`[${randomFloat}] is not a number`);
   });
 });
