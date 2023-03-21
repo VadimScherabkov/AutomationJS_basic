@@ -1,15 +1,15 @@
 describe('Practical Task_Introduction to WebdriverIO', () => {
-  it('validate Login Page', async () => {
+  it('opens Login Page and ensures login controls presence', async () => {
     await browser.url('https://mskengageadmin-dev.mskcc.org/login');
     const loginTitle = await $('//h2[text()="Please login"]');
 
     expect(await loginTitle.getText()).toEqual('Please login');
-    expect(await $('input[data-testid="input-login"]')).isDisplayed;
-    expect(await $('input[data-testid="input-password"]')).isDisplayed;
-    expect(await $('button[data-testid="login-button"]')).isDisplayed;
+    expect(await $('input[data-testid="input-login"]')).toBeDisplayed();
+    expect(await $('input[data-testid="input-password"]')).toBeDisplayed();
+    expect(await $('button[data-testid="login-button"]')).toBeDisplayed();
   });
 
-  it('username and password are mandatory', async () => {
+  it('validates mandatory fields', async () => {
     await $('button[data-testid="login-button"]').click();
     const userNameError = await $('//p[text()="Username is required"]');
     const passwordError = await $('//p[text()="Password is required"]');
@@ -18,27 +18,26 @@ describe('Practical Task_Introduction to WebdriverIO', () => {
     expect(await passwordError.getText()).toEqual('Password is required');
   });
 
-  it('incorrect credentials', async () => {
+  it('entries the incorrect credentials', async () => {
     await $('input[data-testid="input-login"]').setValue('gfndfgnm');
     await $('input[data-testid="input-password"]').setValue('f');
     await $('button[data-testid="login-button"]').click();
-
     const loginFailed = await $('p[class = "help-data"]');
 
     expect(await loginFailed.getText()).toEqual('Login failed! Wrong username or password.');
   });
 
-  it('log in to Admin UI', async () => {
+  it('logs in to Admin UI', async () => {
     await $('input[data-testid="input-login"]').setValue('scherbv');
-    await $('input[data-testid="input-password"]').setValue('D1l9b2v01Wqwer');
-    await $('button[data-testid="login-button"]').click();
+    await $('[class*="password-input"]').setValue('D1l9b2v01Wqwer');
+    await $('//div/following-sibling::button').click();
 
-    expect(await $('//h1[text()="Users List"]')).isDisplayed;
+    expect(await $('//h1[contains(text(), "Users List")]')).toBeDisplayed();
   });
 
-  it('log out from Admin UI', async () => {
-    await $('li[class="main-nav__logout-btn"] a').click();
+  it('logs out from Admin UI', async () => {
+    await $('//a[@href="/Login"]').click();
 
-    expect($('form[class="login-form__wrapper"]')).isDisplayed;
+    expect($('form[class="login-form__wrapper"]')).toBeDisplayed();
   });
 });
