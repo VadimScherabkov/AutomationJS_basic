@@ -102,11 +102,12 @@ describe('Advanced commands', () => {
   });
 
   it('search button becomes gray', async () => {
-    const nonActiveColor = await $('.admin-btn-search').getCSSProperty('background-color');
     await $('.admin-btn-search').moveTo();
-    const activeColor = await $('.admin-btn-search').getCSSProperty('background-color');
+    const activeColorProperty = await $('.admin-btn-search').getCSSProperty('background-color');
+    const jsonProperty= JSON.stringify(activeColorProperty);
+    const activeColorValue = await JSON.parse(jsonProperty).value;
 
-    expect(nonActiveColor).not.toEqual(activeColor);
+    expect(activeColorValue).toEqual('rgba(61,61,61,1)');
   });
 
   it('validates user name in navigation bar', async () => {
