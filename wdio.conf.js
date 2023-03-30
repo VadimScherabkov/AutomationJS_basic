@@ -1,3 +1,4 @@
+const {existsSync, mkdirSync} = require('fs');
 exports.config = {
   //
   // ====================
@@ -65,7 +66,13 @@ exports.config = {
     // it is possible to configure which logTypes to include/exclude.
     // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
     // excludeDriverLogs: ['bugreport', 'server'],
-  }],
+  },
+  {
+    maxInstances: 1,
+    browserName: 'firefox',
+    acceptInsecureCerts: true,
+  },
+  ],
   //
   // ===================
   // Test Configurations
@@ -113,7 +120,7 @@ exports.config = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  services: ['chromedriver'],
+  services: ['chromedriver', 'geckodriver'],
 
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
@@ -135,12 +142,26 @@ exports.config = {
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
-  reporters: ['spec', ['allure', {
-    outputDir: 'allure-results',
-    disableWebdriverStepsReporting: true,
-    disableWebdriverScreenshotsReporting: true,
-    disableMochaHooks: true,
-  }]],
+  reporters: ['spec',
+    [
+      'junit',
+      {
+        outputDir: './report',
+        outputFileFormat: function(options) {
+          return `results-${options.cid}.xml`;
+        },
+      },
+    ],
+    [
+      'allure',
+      {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true,
+        disableMochaHooks: true,
+      },
+    ],
+  ],
 
 
   //
@@ -251,8 +272,38 @@ exports.config = {
      * @param {Boolean} result.passed    true if test has passed, otherwise false
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
-  // afterTest: function(test, context, { error, result, duration, passed, retries }) {
-  // },
+  afterTest: async (test, context, {
+    error,
+    result,
+    duration,
+    passed,
+    retries,
+  }) => {
+    // take a screenshot anytime a test fails and throws an error
+    //  if (result.error) {
+    //    console.log(`Screenshot for the failed test ${test.title} is saved`);
+    //    const filename = test.title + '.png';
+    //    const dirPath = './artifacts/screenshots/';
+    //    if (!existsSync(dirPath)) {
+    //      mkdirSync(dirPath, {
+    //        recursive: true,
+    //      });
+    //    }
+    //    await browser.saveScreenshot(dirPath + filename);
+    //  }
+    if (error) {
+      const filename = test.title + '.png';
+      const dirPath = './screenshots/';
+
+      if (!existsSync(dirPath)) {
+        mkdirSync(dirPath, {
+          recursive: true,
+        });
+      }
+
+      await browser.saveScreenshot(dirPath + filename);
+    }
+  },
 
 
   /**

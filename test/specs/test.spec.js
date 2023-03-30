@@ -4,7 +4,7 @@ describe('Introduction to WebdriverIO', () => {
     await browser.url('https://mskengageadmin-dev.mskcc.org/login');
   });
 
-  it('opens Login Page and ensures login controls presence', async () => {
+  it('Opens Login Page and ensures login controls presence', async () => {
     const loginTitle = await $('//h2[text()="Please login"]');
 
     expect(await loginTitle.getText()).toEqual('Please login');
@@ -13,7 +13,7 @@ describe('Introduction to WebdriverIO', () => {
     expect(await $('button[data-testid="login-button"]')).toBeDisplayed();
   });
 
-  it('validates mandatory fields', async () => {
+  it('Validates mandatory fields', async () => {
     await $('button[data-testid="login-button"]').waitAndClick();
     const userNameError = await $('//p[text()="Username is required"]');
     const passwordError = await $('//p[text()="Password is required"]');
@@ -22,7 +22,7 @@ describe('Introduction to WebdriverIO', () => {
     expect(await passwordError.getText()).toEqual('Password is required');
   });
 
-  it('entries the incorrect credentials', async () => {
+  it('Entries the incorrect credentials', async () => {
     await $('input[data-testid="input-login"]').setValue('gfndfgnm');
     await $('input[data-testid="input-password"]').setValue('f');
     await $('button[data-testid="login-button"]').waitAndClick();
@@ -32,7 +32,7 @@ describe('Introduction to WebdriverIO', () => {
     expect(await loginFailed.getText()).toEqual('Login failed! Wrong username or password.');
   });
 
-  it('logs in to Admin UI', async () => {
+  it('Logs in to Admin UI', async () => {
     await $('input[data-testid="input-login"]').setValue('scherbv');
     await $('[class*="password-input"]').setValue('D1l9b2v01Wqwer');
     await $('//div/following-sibling::button').waitAndClick();
@@ -40,7 +40,7 @@ describe('Introduction to WebdriverIO', () => {
     expect(await $('//h1[contains(text(), "Users List")]')).toBeDisplayed();
   });
 
-  it('logs out from Admin UI', async () => {
+  it('Logs out from Admin UI', async () => {
     await $('//a[@href="/Login"]').waitAndClick();
 
     expect($('.login-form__wrapper')).toBeDisplayed();
@@ -54,24 +54,24 @@ describe('Basic commands', () => {
     await $('//div/following-sibling::button').waitAndClick();
   });
 
-  it('existing questions are displayed on the Question Library page', async () => {
+  it('Existing questions are displayed on the Question Library page', async () => {
     await $('//a[@href="/QuestionLibrary"]').waitAndClick();
     await $('.page-content').waitForDisplayed();
 
     expect($$('//tbody/tr')).toBeDisplayed();
   });
 
-  it('validates Add New Question pop-up is opened', async () => {
+  it('Validates Add New Question pop-up is opened', async () => {
     await $('//button[text()="Add New Question"]').click();
 
     expect($('.add-new-question')).toBeDisplayed();
   });
 
-  it('save button is disabled in Add New Question pop-up', async () => {
+  it('Save button is disabled in Add New Question pop-up', async () => {
     expect($('//button[text()="Cancel"]/following-sibling::button')).toBeDisabled();
   });
 
-  it('changes are not saved after closing Add New Question pop-up', async () => {
+  it('Changes are not saved after closing Add New Question pop-up', async () => {
     await $('div[data-testid="questionText"]').waitAndClick();
     await browser.keys('Test question VadimTest');
     await $('[data-testid="add-question-alias"]').setValue('Test question alias');
@@ -92,7 +92,7 @@ describe('Basic commands', () => {
 });
 
 describe('Advanced commands', () => {
-  it('load spinner disappears after questions are loaded', async () => {
+  it('Load spinner disappears after questions are loaded', async () => {
     await $('//a[@href="/QuestionLibrary"]').waitAndClick();
     await browser.waitUntil(
         async () => await $('.table-spinner').waitForDisplayed({reverse: true}),
@@ -101,16 +101,27 @@ describe('Advanced commands', () => {
     expect($$('//tbody/tr')).toBeDisplayed();
   });
 
-  it('search button becomes gray', async () => {
+  it('Search button becomes gray', async () => {
     await $('.admin-btn-search').moveTo();
-    const activeColorProperty = await $('.admin-btn-search').getCSSProperty('background-color');
-    const jsonProperty= JSON.stringify(activeColorProperty);
-    const activeColorValue = await JSON.parse(jsonProperty).value;
+    await browser.pause(6000);
+    const browserName = browser.capabilities.browserName;
 
-    expect(activeColorValue).toEqual('rgba(61,61,61,1)');
+    if (browserName === 'chrome') {
+      const activeColorProperty = await $('.admin-btn-search').getCSSProperty('background-color');
+      const jsonProperty= JSON.stringify(activeColorProperty);
+      const activeColorValue = await JSON.parse(jsonProperty).value;
+
+      expect(activeColorValue).toEqual('rgba(61,61,61,1)');
+    } else if (browserName === 'firefox') {
+      const activeColorProperty = await $('.admin-btn-search').getCSSProperty('background-color');
+      const jsonProperty= JSON.stringify(activeColorProperty);
+      const activeColorValue = await JSON.parse(jsonProperty).value;
+
+      expect(activeColorValue).toEqual('rgb(61,61,61)');
+    }
   });
 
-  it('validates user name in navigation bar', async () => {
+  it('Validates user name in navigation bar', async () => {
     const userName = await $('li[title="Vadim Scherbakov"]');
     const text = await browser.execute((userName) => {
       return userName.textContent;
