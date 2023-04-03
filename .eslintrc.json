@@ -16,7 +16,8 @@
     ],
     "rules": {
       "max-len": ["error", { "code": 120 }],
-      "no-invalid-this": "off"
+      "no-invalid-this": "off",
+      "require-jsdoc":"off"
     }
   }
   

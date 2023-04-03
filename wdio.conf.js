@@ -24,7 +24,7 @@ exports.config = {
   // will be called from there.
   //
   specs: [
-    './test/specs/**/*.js',
+    './src/test/specs/**/*.js',
     // ToDo: define location for spec files here
   ],
   // Patterns to exclude.
@@ -54,18 +54,10 @@ exports.config = {
   // https://saucelabs.com/platform/platform-configurator
   //
   capabilities: [{
-
-    // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-    // grid with only 5 firefox instances available you can make sure that not more than
-    // 5 instances get started at a time.
     maxInstances: 1,
     //
     browserName: 'chrome',
     acceptInsecureCerts: true,
-    // If outputDir is provided WebdriverIO can capture driver session logs
-    // it is possible to configure which logTypes to include/exclude.
-    // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-    // excludeDriverLogs: ['bugreport', 'server'],
   },
   {
     maxInstances: 1,
@@ -223,11 +215,15 @@ exports.config = {
      * @param {Array.<String>} specs        List of spec file paths that are to be run
      * @param {Object}         browser      instance of created browser/device session
      */
-  before: function(capabilities, specs) {
+  before: async function(capabilities, specs) {
     browser.addCommand('waitAndClick', async function() {
       await this.waitForDisplayed();
       await this.click();
     }, true);
+    await import('expect-webdriverio');
+    global.wdioExpect = global.expect;
+    const chai = await import('chai');
+    global.expect = chai.expect;
   },
   /**
      * Runs before a WebdriverIO command gets executed.
@@ -279,18 +275,6 @@ exports.config = {
     passed,
     retries,
   }) => {
-    // take a screenshot anytime a test fails and throws an error
-    //  if (result.error) {
-    //    console.log(`Screenshot for the failed test ${test.title} is saved`);
-    //    const filename = test.title + '.png';
-    //    const dirPath = './artifacts/screenshots/';
-    //    if (!existsSync(dirPath)) {
-    //      mkdirSync(dirPath, {
-    //        recursive: true,
-    //      });
-    //    }
-    //    await browser.saveScreenshot(dirPath + filename);
-    //  }
     if (error) {
       const filename = test.title + '.png';
       const dirPath = './screenshots/';
