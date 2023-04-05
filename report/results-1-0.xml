@@ -1,419 +1,413 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Introduction to WebdriverIO" timestamp="2023-04-03T12:24:51" time="9.836" tests="5" failures="0" errors="0" skipped="0">
+  <testsuite name="Introduction to WebdriverIO" timestamp="2023-04-04T14:58:51" time="9.981" tests="5" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Introduction to WebdriverIO"/>
       <property name="capabilities" value="firefox.111_0_1.windows"/>
       <property name="file" value="file:///C:/Users/Vadim_Scherbakov/JS/automation-js-basic/automation-js-basic-ui/automation-js-basic/src/test/specs/test.spec.js"/>
     </properties>
-    <testcase classname="firefox.111_0_1.windows.Introduction_to_WebdriverIO" name="Opens Login Page and ensures login controls presence" time="0.699">
+    <testcase classname="firefox.111_0_1.windows.Introduction_to_WebdriverIO" name="Opens Login Page and ensures login controls presence" time="0.689">
       <system-out><![CDATA[
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/window/maximize - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/window/maximize - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
 RESULT: {}
 RESULT: {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/elements - {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/elements - {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
 RESULT: {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/elements - {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/elements - {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
 RESULT: {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
 RESULT: {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/1e9167ff-b24f-4fa6-a138-f866526fa67c/text - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/b1fb5b7f-becc-4f9e-9349-7bc958287aa4/text - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
 RESULT: {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/9b2a683c-a14f-4fbf-ae8a-a812e296bfa8/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/bfce1aa2-d928-4aa8-a711-0acbd5fd423b/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
 RESULT: {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/9a6bf1db-7d5f-48e3-a6aa-d6a36d1ac2ef/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/841c5f10-9e7d-4ff3-81ad-a6c86b687612/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
 RESULT: {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/69afca39-9bb4-4d54-97ec-04f5d36af07c/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/80356c57-726b-4133-9d7b-81d1ac30b315/displayed - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="firefox.111_0_1.windows.Introduction_to_WebdriverIO" name="Validates mandatory fields" time="0.333">
+    <testcase classname="firefox.111_0_1.windows.Introduction_to_WebdriverIO" name="Validates mandatory fields" time="0.311">
       <system-out><![CDATA[
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/window/maximize - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/window/maximize - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
 RESULT: {}
 RESULT: {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/69afca39-9bb4-4d54-97ec-04f5d36af07c/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/80356c57-726b-4133-9d7b-81d1ac30b315/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/69afca39-9bb4-4d54-97ec-04f5d36af07c/click - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/80356c57-726b-4133-9d7b-81d1ac30b315/click - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//p[text()=\"Username is required\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//p[text()=\"Username is required\"]"}
 RESULT: {"using":"xpath","value":"//p[text()=\"Username is required\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/4d50fa2f-4fb5-4bfe-af96-dc6f0db95e32/text - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/d65bc02c-3f94-4bc5-9d85-1a45c0f2ab68/text - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//p[text()=\"Password is required\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//p[text()=\"Password is required\"]"}
 RESULT: {"using":"xpath","value":"//p[text()=\"Password is required\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/ceec6d77-6d95-481a-97b1-7ce440b41222/text - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/eafa89e0-d847-46d1-b4e0-9ebaf0cbcda4/text - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="firefox.111_0_1.windows.Introduction_to_WebdriverIO" name="Entries the incorrect credentials" time="5.541">
+    <testcase classname="firefox.111_0_1.windows.Introduction_to_WebdriverIO" name="Entries the incorrect credentials" time="5.513">
       <system-out><![CDATA[
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/window/maximize - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/window/maximize - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
 RESULT: {}
 RESULT: {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/9b2a683c-a14f-4fbf-ae8a-a812e296bfa8/clear - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/bfce1aa2-d928-4aa8-a711-0acbd5fd423b/clear - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/9b2a683c-a14f-4fbf-ae8a-a812e296bfa8/value - {"text":"invalidLogin"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/bfce1aa2-d928-4aa8-a711-0acbd5fd423b/value - {"text":"invalidLogin"}
 RESULT: {"text":"invalidLogin"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
 RESULT: {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/9a6bf1db-7d5f-48e3-a6aa-d6a36d1ac2ef/clear - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/841c5f10-9e7d-4ff3-81ad-a6c86b687612/clear - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/9a6bf1db-7d5f-48e3-a6aa-d6a36d1ac2ef/value - {"text":"invalidPassword"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/841c5f10-9e7d-4ff3-81ad-a6c86b687612/value - {"text":"invalidPassword"}
 RESULT: {"text":"invalidPassword"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
 RESULT: {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/69afca39-9bb4-4d54-97ec-04f5d36af07c/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/80356c57-726b-4133-9d7b-81d1ac30b315/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/69afca39-9bb4-4d54-97ec-04f5d36af07c/click - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/80356c57-726b-4133-9d7b-81d1ac30b315/click - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
 RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
 RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
 RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
 RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
 RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
 RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
 RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
 RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
 RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
 RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
 RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
 RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/09a7c3e8-82fe-4a35-a8c8-3517f942181f/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/69b4ecb7-7e7c-4ba6-944c-b37540ac294d/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
 RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/09a7c3e8-82fe-4a35-a8c8-3517f942181f/text - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/69b4ecb7-7e7c-4ba6-944c-b37540ac294d/text - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="firefox.111_0_1.windows.Introduction_to_WebdriverIO" name="Logs in to Admin UI" time="0.929">
+    <testcase classname="firefox.111_0_1.windows.Introduction_to_WebdriverIO" name="Logs in to Admin UI" time="0.933">
       <system-out><![CDATA[
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/window/maximize - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/window/maximize - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
 RESULT: {}
 RESULT: {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/9b2a683c-a14f-4fbf-ae8a-a812e296bfa8/clear - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/bfce1aa2-d928-4aa8-a711-0acbd5fd423b/clear - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/9b2a683c-a14f-4fbf-ae8a-a812e296bfa8/value - {"text":"scherbv"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/bfce1aa2-d928-4aa8-a711-0acbd5fd423b/value - {"text":"scherbv"}
 RESULT: {"text":"scherbv"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
 RESULT: {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/9a6bf1db-7d5f-48e3-a6aa-d6a36d1ac2ef/clear - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/841c5f10-9e7d-4ff3-81ad-a6c86b687612/clear - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/9a6bf1db-7d5f-48e3-a6aa-d6a36d1ac2ef/value - {"text":"D1l9b2v01Wqwer"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/841c5f10-9e7d-4ff3-81ad-a6c86b687612/value - {"text":"D1l9b2v01Wqwer"}
 RESULT: {"text":"D1l9b2v01Wqwer"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
 RESULT: {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/69afca39-9bb4-4d54-97ec-04f5d36af07c/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/80356c57-726b-4133-9d7b-81d1ac30b315/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/69afca39-9bb4-4d54-97ec-04f5d36af07c/click - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/80356c57-726b-4133-9d7b-81d1ac30b315/click - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
 RESULT: {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
 RESULT: {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
 RESULT: {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/92636c35-5e82-484a-942c-e82eecbfd6c0/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/a37ec1d2-8ffc-4801-a2e5-6b8115380aa1/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
 RESULT: {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/92636c35-5e82-484a-942c-e82eecbfd6c0/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/a37ec1d2-8ffc-4801-a2e5-6b8115380aa1/displayed - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="firefox.111_0_1.windows.Introduction_to_WebdriverIO" name="Logs out from Admin UI" time="0.285">
+    <testcase classname="firefox.111_0_1.windows.Introduction_to_WebdriverIO" name="Logs out from Admin UI" time="0.338">
       <system-out><![CDATA[
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/window/maximize - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//a[@href=\"/Login\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/window/maximize - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//a[@href=\"/Login\"]"}
 RESULT: {}
 RESULT: {"using":"xpath","value":"//a[@href=\"/Login\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/3863a3a7-8d6d-4677-83cf-44402a0ad236/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/9e92c7a2-6cfc-4127-819c-31f8c1c4084c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/3863a3a7-8d6d-4677-83cf-44402a0ad236/click - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/9e92c7a2-6cfc-4127-819c-31f8c1c4084c/click - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".login-form__wrapper"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".login-form__wrapper"}
 RESULT: {"using":"css selector","value":".login-form__wrapper"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/205c4513-511c-44aa-bc88-002cccf61426/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/cd6ac17e-6a41-4967-a7bc-fa5fb55bf72c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".login-form__wrapper"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".login-form__wrapper"}
 RESULT: {"using":"css selector","value":".login-form__wrapper"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/205c4513-511c-44aa-bc88-002cccf61426/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/cd6ac17e-6a41-4967-a7bc-fa5fb55bf72c/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
 RESULT: {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/730d6472-3464-41c7-9230-7d344320419c/clear - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/719e524f-b672-4620-b288-76c79cefc631/clear - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/730d6472-3464-41c7-9230-7d344320419c/value - {"text":"scherbv"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/719e524f-b672-4620-b288-76c79cefc631/value - {"text":"scherbv"}
 RESULT: {"text":"scherbv"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
 RESULT: {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/49e38001-8bbe-4ef7-afb1-80f59cdec0b1/clear - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/5407fce9-10f2-4c5f-8d14-db3389f7b6b0/clear - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/49e38001-8bbe-4ef7-afb1-80f59cdec0b1/value - {"text":"D1l9b2v01Wqwer"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/5407fce9-10f2-4c5f-8d14-db3389f7b6b0/value - {"text":"D1l9b2v01Wqwer"}
 RESULT: {"text":"D1l9b2v01Wqwer"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
 RESULT: {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/c7f65835-fc94-48a5-8880-bf6ee0ac9da4/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/a6ba00f2-4341-44f4-9a20-d47b43748348/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/c7f65835-fc94-48a5-8880-bf6ee0ac9da4/click - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/a6ba00f2-4341-44f4-9a20-d47b43748348/click - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
   </testsuite>
-  <testsuite name="Basic commands" timestamp="2023-04-03T12:25:01" time="10.662" tests="4" failures="0" errors="0" skipped="0">
+  <testsuite name="Basic commands" timestamp="2023-04-04T14:59:01" time="9.428" tests="4" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Basic commands"/>
       <property name="capabilities" value="firefox.111_0_1.windows"/>
       <property name="file" value="file:///C:/Users/Vadim_Scherbakov/JS/automation-js-basic/automation-js-basic-ui/automation-js-basic/src/test/specs/test.spec.js"/>
     </properties>
-    <testcase classname="firefox.111_0_1.windows.Basic_commands" name="Existing questions are displayed on the Question Library page" time="4.405">
+    <testcase classname="firefox.111_0_1.windows.Basic_commands" name="Existing questions are displayed on the Question Library page" time="4.127">
       <system-out><![CDATA[
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/window/maximize - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/window/maximize - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
 RESULT: {}
 RESULT: {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/elements - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/elements - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
 RESULT: {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/elements - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/elements - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
 RESULT: {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
 RESULT: {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/971ec690-237c-4c2c-b6c0-791f545b590e/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/ee24b4d8-9e3a-4bcb-95b2-774cca30e7df/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/971ec690-237c-4c2c-b6c0-791f545b590e/click - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/ee24b4d8-9e3a-4bcb-95b2-774cca30e7df/click - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".questions-table"}
 RESULT: {"using":"css selector","value":".questions-table"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".questions-table"}
 RESULT: {"using":"css selector","value":".questions-table"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".questions-table"}
 RESULT: {"using":"css selector","value":".questions-table"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".questions-table"}
 RESULT: {"using":"css selector","value":".questions-table"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".questions-table"}
 RESULT: {"using":"css selector","value":".questions-table"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".questions-table"}
 RESULT: {"using":"css selector","value":".questions-table"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".questions-table"}
 RESULT: {"using":"css selector","value":".questions-table"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".questions-table"}
 RESULT: {"using":"css selector","value":".questions-table"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".questions-table"}
-RESULT: {"using":"css selector","value":".questions-table"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/34b65cb1-21ec-4e8b-9be8-700264b8ef53/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/b47a79b1-b049-4e3a-a8ae-e32a597669df/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/elements - {"using":"xpath","value":"//tbody/tr"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/elements - {"using":"xpath","value":"//tbody/tr"}
 RESULT: {"using":"xpath","value":"//tbody/tr"}
 ]]></system-out>
     </testcase>
-    <testcase classname="firefox.111_0_1.windows.Basic_commands" name="Validates Add New Question pop up is opened" time="0.416">
+    <testcase classname="firefox.111_0_1.windows.Basic_commands" name="Validates Add New Question pop up is opened" time="0.564">
       <system-out><![CDATA[
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/window/maximize - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//button[text()=\"Add New Question\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/window/maximize - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//button[text()=\"Add New Question\"]"}
 RESULT: {}
 RESULT: {"using":"xpath","value":"//button[text()=\"Add New Question\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/1c2a9b0e-3db0-4ed9-8212-4bab541e114e/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/c6f25777-2cec-4ddc-8e7b-d51016bd7e39/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/1c2a9b0e-3db0-4ed9-8212-4bab541e114e/click - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/c6f25777-2cec-4ddc-8e7b-d51016bd7e39/click - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".add-new-question"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".add-new-question"}
 RESULT: {"using":"css selector","value":".add-new-question"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/c3d36d7b-2176-4f89-b7b6-a994cb808797/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/b83c2b12-78c8-45bd-874d-acba6cfded36/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".add-new-question"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".add-new-question"}
 RESULT: {"using":"css selector","value":".add-new-question"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/c3d36d7b-2176-4f89-b7b6-a994cb808797/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/b83c2b12-78c8-45bd-874d-acba6cfded36/displayed - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="firefox.111_0_1.windows.Basic_commands" name="Save button is disabled in Add New Question pop up" time="0.026">
+    <testcase classname="firefox.111_0_1.windows.Basic_commands" name="Save button is disabled in Add New Question pop up" time="0.053">
       <system-out><![CDATA[
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/window/maximize - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//button[text()=\"Cancel\"]/following-sibling::button"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/window/maximize - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//button[text()=\"Cancel\"]/following-sibling::button"}
 RESULT: {}
 RESULT: {"using":"xpath","value":"//button[text()=\"Cancel\"]/following-sibling::button"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/546a5140-9a11-4796-9c16-0cab682293b7/enabled - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/0860fa8f-0da3-4d23-8daf-e8904be7f799/enabled - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="firefox.111_0_1.windows.Basic_commands" name="Changes are not saved after closing Add New Question pop up" time="2.849">
+    <testcase classname="firefox.111_0_1.windows.Basic_commands" name="Changes are not saved after closing Add New Question pop up" time="2.344">
       <system-out><![CDATA[
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/window/maximize - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"div[data-testid=\"questionText\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/window/maximize - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"div[data-testid=\"questionText\"]"}
 RESULT: {}
 RESULT: {"using":"css selector","value":"div[data-testid=\"questionText\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/6d4a7280-60e0-4a95-bb69-1023a65355f2/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/97c1bd51-4661-4825-8682-1506c90da2ad/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/6d4a7280-60e0-4a95-bb69-1023a65355f2/click - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/97c1bd51-4661-4825-8682-1506c90da2ad/click - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":"T"},{"type":"keyDown","value":"e"},{"type":"keyDown","value":"s"},{"type":"keyDown","value":"t"},{"type":"keyDown","value":" "},{"type":"keyDown","value":"q"},{"type":"keyDown","value":"u"},{"type":"keyDown","value":"e"},{"type":"keyDown","value":"s"},{"type":"keyDown","value":"t"},"(37 more items)"]}]}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":"T"},{"type":"keyDown","value":"e"},{"type":"keyDown","value":"s"},{"type":"keyDown","value":"t"},{"type":"keyDown","value":" "},{"type":"keyDown","value":"q"},{"type":"keyDown","value":"u"},{"type":"keyDown","value":"e"},{"type":"keyDown","value":"s"},{"type":"keyDown","value":"t"},"(37 more items)"]}]}
 RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":"T"},{"type":"keyDown","value":"e"},{"type":"keyDown","value":"s"},{"type":"keyDown","value":"t"},{"type":"keyDown","value":" "},{"type":"keyDown","value":"q"},{"type":"keyDown","value":"u"},{"type":"keyDown","value":"e"},{"type":"keyDown","value":"s"},{"type":"keyDown","value":"t"},"(37 more items)"]}]}
-COMMAND: DELETE /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/actions - {}
+COMMAND: DELETE /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/actions - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"[data-testid=\"add-question-alias\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"[data-testid=\"add-question-alias\"]"}
 RESULT: {"using":"css selector","value":"[data-testid=\"add-question-alias\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/ef7136e8-a61d-4a72-9659-24f5e51fd138/clear - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/91d3ff01-2a6e-417d-b745-4c8a0334e541/clear - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/ef7136e8-a61d-4a72-9659-24f5e51fd138/value - {"text":"Test question alias"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/91d3ff01-2a6e-417d-b745-4c8a0334e541/value - {"text":"Test question alias"}
 RESULT: {"text":"Test question alias"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"[data-testid=\"add-question-short-name\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"[data-testid=\"add-question-short-name\"]"}
 RESULT: {"using":"css selector","value":"[data-testid=\"add-question-short-name\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/1612fbfb-16ca-47a3-a144-4fe3ad822981/clear - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/d8bec1a4-6f59-49d4-af6e-4d63f84ed4eb/clear - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/1612fbfb-16ca-47a3-a144-4fe3ad822981/value - {"text":"Test question shortname"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/d8bec1a4-6f59-49d4-af6e-4d63f84ed4eb/value - {"text":"Test question shortname"}
 RESULT: {"text":"Test question shortname"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"input[name=\"question-keywords\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"input[name=\"question-keywords\"]"}
 RESULT: {"using":"css selector","value":"input[name=\"question-keywords\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/96b674f9-af0c-4d0e-9bd1-225982c28b06/clear - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/655de081-c5f0-4b03-a539-e2af02759f34/clear - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/96b674f9-af0c-4d0e-9bd1-225982c28b06/value - {"text":"Test question keywords"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/655de081-c5f0-4b03-a539-e2af02759f34/value - {"text":"Test question keywords"}
 RESULT: {"text":"Test question keywords"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//button[text()=\"Cancel\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//button[text()=\"Cancel\"]"}
 RESULT: {"using":"xpath","value":"//button[text()=\"Cancel\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/7e718dec-8006-4310-9f60-82d970b36635/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/c066d63e-0c28-492b-b886-373c39635ea9/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/7e718dec-8006-4310-9f60-82d970b36635/click - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/c066d63e-0c28-492b-b886-373c39635ea9/click - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//button[text()=\"Add New Question\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//button[text()=\"Add New Question\"]"}
 RESULT: {"using":"xpath","value":"//button[text()=\"Add New Question\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/1c2a9b0e-3db0-4ed9-8212-4bab541e114e/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/c6f25777-2cec-4ddc-8e7b-d51016bd7e39/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/1c2a9b0e-3db0-4ed9-8212-4bab541e114e/click - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/c6f25777-2cec-4ddc-8e7b-d51016bd7e39/click - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"div[data-testid=\"questionText\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"div[data-testid=\"questionText\"]"}
 RESULT: {"using":"css selector","value":"div[data-testid=\"questionText\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/170a28e6-6b06-4840-8268-c6af312e4695/text - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/98f85efc-d4eb-4a50-9135-2489707e531b/text - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"[data-testid=\"add-question-alias\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"[data-testid=\"add-question-alias\"]"}
 RESULT: {"using":"css selector","value":"[data-testid=\"add-question-alias\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/84e90f87-b814-487e-8b24-fb6260b1087c/property/value - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/9ceb4486-3d4c-4d18-8bc8-9c3f3e4d46cb/property/value - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"[data-testid=\"add-question-short-name\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"[data-testid=\"add-question-short-name\"]"}
 RESULT: {"using":"css selector","value":"[data-testid=\"add-question-short-name\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/37f5b99d-8579-4b47-8d9f-9495476bba68/property/value - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/bcc883c0-b898-4e6e-b91d-7ad94706f418/property/value - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"input[name=\"question-keywords\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"input[name=\"question-keywords\"]"}
 RESULT: {"using":"css selector","value":"input[name=\"question-keywords\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/b4aab9f5-af93-44b2-bfb1-a66c711f55d9/property/value - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/8cfff15c-f6f0-4de2-b430-7fad3bd6512b/property/value - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/refresh - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/refresh - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
   </testsuite>
-  <testsuite name="Advanced commands" timestamp="2023-04-03T12:25:11" time="11.881" tests="3" failures="0" errors="0" skipped="0">
+  <testsuite name="Advanced commands" timestamp="2023-04-04T14:59:10" time="5.807" tests="3" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Advanced commands"/>
       <property name="capabilities" value="firefox.111_0_1.windows"/>
       <property name="file" value="file:///C:/Users/Vadim_Scherbakov/JS/automation-js-basic/automation-js-basic-ui/automation-js-basic/src/test/specs/test.spec.js"/>
     </properties>
-    <testcase classname="firefox.111_0_1.windows.Advanced_commands" name="Load spinner disappears after questions are loaded" time="5.684">
+    <testcase classname="firefox.111_0_1.windows.Advanced_commands" name="Load spinner disappears after questions are loaded" time="4.601">
       <system-out><![CDATA[
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/window/maximize - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/window/maximize - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
 RESULT: {}
 RESULT: {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/elements - {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/elements - {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
 RESULT: {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/elements - {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/elements - {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
 RESULT: {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
 RESULT: {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/a287f64d-e39a-47ad-9a3f-e0ad595b885a/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/24226a9a-1f0e-44a3-b3ac-f47de2dcf149/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/a287f64d-e39a-47ad-9a3f-e0ad595b885a/click - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/24226a9a-1f0e-44a3-b3ac-f47de2dcf149/click - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
 RESULT: {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/8c29a2aa-93c8-487f-b42c-4a9f49bf0102/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/b6bb5e0f-6bae-4e18-8866-98aa7e3473a4/displayed - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/8c29a2aa-93c8-487f-b42c-4a9f49bf0102/click - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/b6bb5e0f-6bae-4e18-8866-98aa7e3473a4/click - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".table-spinner"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".table-spinner"}
 RESULT: {"using":"css selector","value":".table-spinner"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/32de0edc-b27d-419d-b7f9-47db66eae69d/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/54323e7f-cc86-488a-b0b1-22da140b2b98/displayed - {}
 RESULT: {}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/32de0edc-b27d-419d-b7f9-47db66eae69d/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/54323e7f-cc86-488a-b0b1-22da140b2b98/displayed - {}
 RESULT: {}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/32de0edc-b27d-419d-b7f9-47db66eae69d/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/54323e7f-cc86-488a-b0b1-22da140b2b98/displayed - {}
 RESULT: {}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/32de0edc-b27d-419d-b7f9-47db66eae69d/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/54323e7f-cc86-488a-b0b1-22da140b2b98/displayed - {}
 RESULT: {}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/32de0edc-b27d-419d-b7f9-47db66eae69d/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/54323e7f-cc86-488a-b0b1-22da140b2b98/displayed - {}
 RESULT: {}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/32de0edc-b27d-419d-b7f9-47db66eae69d/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/54323e7f-cc86-488a-b0b1-22da140b2b98/displayed - {}
 RESULT: {}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/32de0edc-b27d-419d-b7f9-47db66eae69d/displayed - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/54323e7f-cc86-488a-b0b1-22da140b2b98/displayed - {}
 RESULT: {}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/32de0edc-b27d-419d-b7f9-47db66eae69d/displayed - {}
-RESULT: {}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/32de0edc-b27d-419d-b7f9-47db66eae69d/displayed - {}
-RESULT: {}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/32de0edc-b27d-419d-b7f9-47db66eae69d/displayed - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".table-spinner"}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/54323e7f-cc86-488a-b0b1-22da140b2b98/displayed - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".table-spinner"}
 RESULT: {"using":"css selector","value":".table-spinner"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/32de0edc-b27d-419d-b7f9-47db66eae69d/displayed - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".table-spinner"}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/54323e7f-cc86-488a-b0b1-22da140b2b98/displayed - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".table-spinner"}
 RESULT: {"using":"css selector","value":".table-spinner"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/elements - {"using":"xpath","value":"//tbody/tr"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/elements - {"using":"xpath","value":"//tbody/tr"}
 RESULT: {"using":"xpath","value":"//tbody/tr"}
 ]]></system-out>
     </testcase>
-    <testcase classname="firefox.111_0_1.windows.Advanced_commands" name="Search button becomes gray" time="6.173">
+    <testcase classname="firefox.111_0_1.windows.Advanced_commands" name="Search button becomes gray" time="1.178">
       <system-out><![CDATA[
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/window/maximize - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".admin-btn-search"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/window/maximize - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".admin-btn-search"}
 RESULT: {}
 RESULT: {"using":"css selector","value":".admin-btn-search"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/a066606b-ae60-4e73-9d4c-23d9fd498a6b/rect - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/1d69e61c-a427-4c81-be05-bca35bde8c2e/rect - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/execute/sync - {"script":"return (function () {\n        return { scrollX: this.pageXOffset, scrollY: this.pageYOffset };\n    }).apply(null, arguments)","args":[]}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/execute/sync - {"script":"return (function () {\n        return { scrollX: this.pageXOffset, scrollY: this.pageYOffset };\n    }).apply(null, arguments)","args":[]}
 RESULT: {"script":"return (function () {\n        return { scrollX: this.pageXOffset, scrollY: this.pageYOffset };\n    }).apply(null, arguments)","args":[]}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/actions - {"actions":[{"id":"action2","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"}]}]}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/actions - {"actions":[{"id":"action2","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"}]}]}
 RESULT: {"actions":[{"id":"action2","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"}]}]}
-COMMAND: DELETE /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/actions - {}
+COMMAND: DELETE /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/actions - {}
 RESULT: {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":".admin-btn-search"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":".admin-btn-search"}
 RESULT: {"using":"css selector","value":".admin-btn-search"}
-COMMAND: GET /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element/a066606b-ae60-4e73-9d4c-23d9fd498a6b/css/background-color - {}
+COMMAND: GET /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element/1d69e61c-a427-4c81-be05-bca35bde8c2e/css/background-color - {}
 RESULT: {}
 ]]></system-out>
     </testcase>
-    <testcase classname="firefox.111_0_1.windows.Advanced_commands" name="Validates user name in navigation bar" time="0.017">
+    <testcase classname="firefox.111_0_1.windows.Advanced_commands" name="Validates user name in navigation bar" time="0.021">
       <system-out><![CDATA[
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/window/maximize - {}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/element - {"using":"css selector","value":"li[title=\"Vadim Scherbakov\"]"}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/window/maximize - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/element - {"using":"css selector","value":"li[title=\"Vadim Scherbakov\"]"}
 RESULT: {}
 RESULT: {"using":"css selector","value":"li[title=\"Vadim Scherbakov\"]"}
-COMMAND: POST /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009/execute/sync - {"script":"return ((userName) => {\n      return userName.textContent;\n    }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e6c2950c-ce6a-41c8-a1c8-477045a4486a","ELEMENT":"e6c2950c-ce6a-41c8-a1c8-477045a4486a"}]}
-RESULT: {"script":"return ((userName) => {\n      return userName.textContent;\n    }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e6c2950c-ce6a-41c8-a1c8-477045a4486a","ELEMENT":"e6c2950c-ce6a-41c8-a1c8-477045a4486a"}]}
-COMMAND: DELETE /session/30e7cfaf-51c7-45f1-89dd-4b0be4c28009 - {}
+COMMAND: POST /session/ddbc8bb2-b938-4784-a410-ba5584783cd3/execute/sync - {"script":"return ((userName) => {\n      return userName.textContent;\n    }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"879754d2-7065-4b28-9e1b-d7a67cb8faf3","ELEMENT":"879754d2-7065-4b28-9e1b-d7a67cb8faf3"}]}
+RESULT: {"script":"return ((userName) => {\n      return userName.textContent;\n    }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"879754d2-7065-4b28-9e1b-d7a67cb8faf3","ELEMENT":"879754d2-7065-4b28-9e1b-d7a67cb8faf3"}]}
+COMMAND: DELETE /session/ddbc8bb2-b938-4784-a410-ba5584783cd3 - {}
 RESULT: {}
 ]]></system-out>
     </testcase>

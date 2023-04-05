@@ -66,7 +66,7 @@ describe('Basic commands', () => {
     await userListPage.header.item('questionLibrary').waitAndClick();
     await questionLibraryPage.questionsTable.waitForDisplayed();
 
-    expect(await questionLibraryPage.questions).to.have.lengthOf(15);
+    expect(await questionLibraryPage.questionsList).to.have.lengthOf(15);
   });
 
   it('Validates Add New Question pop-up is opened', async () => {
@@ -108,12 +108,12 @@ describe('Advanced commands', () => {
         async () => await basePage.spinner.waitForDisplayed({reverse: true}),
         {timeout: 5000, interval: 600, timeoutMsg: 'not loaded'});
 
-    expect(await questionLibraryPage.questions).to.have.lengthOf(15);
+    expect(await questionLibraryPage.questionsList).to.have.lengthOf(15);
   });
 
   it('Search button becomes gray', async () => {
     await basePage.searchButton.moveTo();
-    await browser.pause(6000);
+    await browser.pause(1000);
     const browserName = browser.capabilities.browserName;
 
     if (browserName === 'chrome') {
