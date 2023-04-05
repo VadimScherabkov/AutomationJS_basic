@@ -1,4 +1,3 @@
-const Header = require('../components/common/header.component');
 const BasePage = require('./base.page');
 /**
  * Description of UserListPage class that child of BasePage
@@ -11,7 +10,7 @@ class UserListPage extends BasePage {
    *
    */
   constructor() {
-    super(Header);
+    super();
   }
   /**
  * Returns title of the page.
