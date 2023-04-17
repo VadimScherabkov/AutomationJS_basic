@@ -24,7 +24,7 @@ exports.config = {
   // will be called from there.
   //
   specs: [
-    './src/test/specs/**/*.js',
+    './src/features/**/*.feature',
     // ToDo: define location for spec files here
   ],
   // Patterns to exclude.
@@ -54,16 +54,16 @@ exports.config = {
   // https://saucelabs.com/platform/platform-configurator
   //
   capabilities: [{
-    maxInstances: 1,
+    maxInstances: 2,
     //
     browserName: 'chrome',
     acceptInsecureCerts: true,
   },
-  {
-    maxInstances: 1,
-    browserName: 'firefox',
-    acceptInsecureCerts: true,
-  },
+  // {
+  //   maxInstances: 1,
+  //   browserName: 'firefox',
+  //   acceptInsecureCerts: true,
+  // },
   ],
   //
   // ===================
@@ -96,7 +96,7 @@ exports.config = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: 'http://localhost',
+  baseUrl: 'https://mskengageadmin-dev.mskcc.org/login',
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
@@ -120,7 +120,10 @@ exports.config = {
   //
   // Make sure you have the wdio adapter package for the specific framework installed
   // before running any tests.
-  framework: 'mocha',
+  framework: 'cucumber',
+  cucumberOpts: {
+    timeout: 10000,
+  },
   //
   // The number of times to retry the entire specfile when it fails as a whole
   // specFileRetries: 1,
@@ -154,7 +157,53 @@ exports.config = {
       },
     ],
   ],
-
+  // If you are using Cucumber you need to specify the location of your step definitions.
+  cucumberOpts: {
+  // <boolean> show full backtrace for errors
+    backtrace: false,
+    // <string[]> module used for processing required features
+    requireModule: [],
+    // <boolean< Treat ambiguous definitions as errors
+    failAmbiguousDefinitions: true,
+    // <boolean> invoke formatters without executing steps
+    // dryRun: false,
+    // <boolean> abort the run on first failure
+    failFast: false,
+    // <boolean> Enable this config to treat undefined definitions as
+    // warnings
+    ignoreUndefinedDefinitions: false,
+    // <string[]> ("extension:module") require files with the given
+    // EXTENSION after requiring MODULE (repeatable)
+    names: [],
+    // <boolean> hide step definition snippets for pending steps
+    snippets: true,
+    // <boolean> hide source uris
+    source: true,
+    // <string[]> (name) specify the profile to use
+    profile: [],
+    // <string[]> (file/dir) require files before executing features
+    require: [
+      './src/step-definitions/*steps.js',
+      './src/step-definitions/hooks.js',
+      // Or search a (sub)folder for JS files with a wildcard
+      // works since version 1.1 of the wdio-cucumber-framework
+      // './src/**/*.js',
+    ],
+    scenarioLevelReporter: false,
+    order: 'defined',
+    // <string> specify a custom snippet syntax
+    snippetSyntax: undefined,
+    // <boolean> fail if there are any undefined or pending steps
+    strict: true,
+    // <string> (expression) only execute the features or scenarios with
+    // tags matching the expression, see
+    // https://docs.cucumber.io/tag-expressions/
+    tagExpression: '',
+    // <boolean> add cucumber tags to feature or scenario name
+    tagsInTitle: false,
+    // <number> timeout for step definitions
+    timeout: 20000,
+  },
 
   //
   // Options to be passed to Mocha.

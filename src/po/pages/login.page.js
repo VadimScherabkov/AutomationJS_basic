@@ -6,6 +6,10 @@ const BasePage = require('./base.page');
  * @extends BasePage
  */
 class LoginPage extends BasePage {
+  constructor() {
+    super();
+  }
+
   get loginTitle() {
     return $('//h2[text()="Please login"]');
   }
