@@ -22,5 +22,5 @@ Given('I wait the {string} to be displayed', async (itemName) => {
 });
 
 Given('I go to {string} page', async (pageName) => {
-  await page('users').header.item('questionLibrary').waitAndClick();
+  await page('users').header.item(pageName).waitAndClick();
 });

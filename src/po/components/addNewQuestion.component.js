@@ -23,7 +23,7 @@ class AddNewQuestion {
       KeyWords: 'input[name="question-keywords"]',
     };
     return $(`${selectors[param]}`);
-  };
+  }
   /**
  * Returns buttons from Add New QUestion panel.
  * @param {string} param - button.
@@ -35,7 +35,7 @@ class AddNewQuestion {
       Save: '//button[text()="Cancel"]/following-sibling::button',
     };
     return $(`${selectors[param]}`);
-  };
+  }
 }
 
 module.exports = AddNewQuestion;

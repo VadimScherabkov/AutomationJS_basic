@@ -19,6 +19,5 @@ Examples:
 
 @2
 Scenario: Existing questions are displayed on the Question Library page
-    Given I go to 'Question Library' page
+    Given I go to 'QuestionLibrary' page
     Then Question table is shown
-    

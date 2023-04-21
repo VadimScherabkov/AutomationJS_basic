@@ -17,10 +17,10 @@ class Header {
  */
   item(param) {
     const selectors = {
-      questionLibrary: '//a[@href="/QuestionLibrary"]',
-      userList: '//a[@href="/UserList"]',
-      assessmentList: '//a[@href="/SurveyList"]',
-      translation: '//a[@href="/SurveyLocalization"]',
+      QuestionLibrary: '//a[@href="/QuestionLibrary"]',
+      UserList: '//a[@href="/UserList"]',
+      SssessmentList: '//a[@href="/SurveyList"]',
+      Translation: '//a[@href="/SurveyLocalization"]',
     };
     return $(`${selectors[param]}`);
   }

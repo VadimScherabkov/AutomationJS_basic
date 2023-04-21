@@ -1,9 +1,16 @@
 {
+    "globals": {
+      "$": true,
+      "$$": true,
+      "browser": true,
+      "WebdriverIO": true
+    },
     "env": {
+      "browser": true,
       "es2021": true,
       "node": true
     },
-    "extends": "google",
+    "extends": "eslint:recommended",
     "overrides": [],
     "parserOptions": {
       "ecmaVersion": "latest",
@@ -15,9 +22,7 @@
     ],
     "rules": {
       "max-len": ["error", { "code": 120 }],
-      "no-invalid-this": "off",
-      "new-cap": ["error", { "newIsCap": true,
-       "capIsNewExceptions": ["Given", "When", "Then", "And", "But"] }]
+      "no-invalid-this": "off"
     }
   }
   

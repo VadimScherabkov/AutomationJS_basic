@@ -121,9 +121,6 @@ exports.config = {
   // Make sure you have the wdio adapter package for the specific framework installed
   // before running any tests.
   framework: 'cucumber',
-  cucumberOpts: {
-    timeout: 10000,
-  },
   //
   // The number of times to retry the entire specfile when it fails as a whole
   // specFileRetries: 1,
@@ -261,10 +258,10 @@ exports.config = {
      * Gets executed before test execution begins. At this point you can access to all global
      * variables like `browser`. It is the perfect place to define custom commands.
      * @param {Array.<Object>} capabilities list of capabilities details
-     * @param {Array.<String>} specs        List of spec file paths that are to be run
+     * @param {Array.<String>} _specs        List of spec file paths that are to be run
      * @param {Object}         browser      instance of created browser/device session
      */
-  before: async function(capabilities, specs) {
+  before: async function() {
     browser.addCommand('waitAndClick', async function() {
       await this.waitForDisplayed();
       await this.click();
@@ -291,7 +288,7 @@ exports.config = {
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
 
-  beforeTest: function(test, context) {
+  beforeTest: function() {
     browser.maximizeWindow();
   },
 
@@ -317,12 +314,8 @@ exports.config = {
      * @param {Boolean} result.passed    true if test has passed, otherwise false
      * @param {Object}  result.retries   informations to spec related retries, e.g. `{ attempts: 0, limit: 0 }`
      */
-  afterTest: async (test, context, {
+  afterTest: async (test, {
     error,
-    result,
-    duration,
-    passed,
-    retries,
   }) => {
     if (error) {
       const filename = test.title + '.png';
