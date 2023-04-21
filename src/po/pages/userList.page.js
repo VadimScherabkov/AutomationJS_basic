@@ -1,6 +1,6 @@
 const BasePage = require('./base.page');
 /**
- * Description of UserListPage class that child of BasePage
+ * Description of UserListPage class that child of BasePage.
  */
 class UserListPage extends BasePage {
   /**
@@ -13,11 +13,22 @@ class UserListPage extends BasePage {
     super();
   }
   /**
- * Returns title of the page.
+ * Returns title of the User List page.
  * @return {Element} - Page title.
  */
   get titlePage() {
     return $('//h1[contains(text(), "Users List")]');
+  }
+  /**
+ * Returns page element.
+ * @param {string} param - Page's element.
+ * @return {string} - Selector.
+ */
+  item(param) {
+    const selectors = {
+      Title: '//h1[contains(text(), "Users List")]',
+    };
+    return $(`${selectors[param]}`);
   }
 }
 

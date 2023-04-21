@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 const {Then} = require('@wdio/cucumber-framework');
 const compareText = require('./utils/compre-text');
 const {page} = require('../po');
@@ -10,16 +9,12 @@ Then('Login title should {string} {string}', async (shouldBeParameter, titleText
   return compareText(pageTitle, titleText, shouldBeParameter);
 });
 
-Then('Login input is displayed', async () => {
-  expect(await page('login').loginInput.isDisplayed()).to.be.true;
+Then('{string} input is displayed', async (inputName) => {
+  expect(await page('login').input(inputName).isDisplayed()).to.be.true;
 });
 
-Then('Password input is displayed', async () => {
-  expect(await page('login').passwordInput.isDisplayed()).to.be.true;
-});
-
-Then('{string} button is displayed', async (button) => {
-  expect(await page('login').loginButton.isDisplayed(button)).to.be.true;
+Then('{string} button is displayed', async (buttonName) => {
+  expect(await page('login').button(buttonName).isDisplayed()).to.be.true;
 });
 
 Then('Login validation message is shown', async () => {
@@ -36,8 +31,8 @@ Then('Validation message is shown', async () => {
   expect(await page('login').loginFailedMessage.getText()).to.equal('Login failed! Wrong username or password.');
 });
 
-Then('{string} title page is displayed', async (pageName) => {
-  expect(await page('users').titlePage.isDisplayed(pageName)).to.be.true;
+Then('{string} {string} page is displayed', async (pageName, itemName) => {
+  expect(await page(pageName).item(itemName).isDisplayed()).to.be.true;
 });
 
 Then('Question table is shown', async () => {

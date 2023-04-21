@@ -1,4 +1,9 @@
-/* eslint-disable require-jsdoc */
+/** Compiration of text
+ * @param {string} firstText - first text
+ * @param {string} secondText - second text
+ * @param {strin} compareOption - compiration way
+ * @return {boolean}
+*/
 function compareText(firstText, secondText, compareOption) {
   switch ((compareOption)) {
     case 'be equal to':

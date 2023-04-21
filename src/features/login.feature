@@ -6,8 +6,8 @@ Feature: LoginPage
 Scenario: Opens Login Page and ensures login controls presence
     Given I open 'login' page
     Then Login title should 'be equal to' 'Please login'
-        And Login input is displayed
-        And Password input is displayed
+        And 'Login' input is displayed
+        And 'Password' input is displayed
         And 'Login' button is displayed
 
 @2
@@ -18,8 +18,8 @@ Scenario: Validates mandatory fields
 
 @3
 Scenario: Entries the incorrect credentials
-    Given I enter the incorrect '<Username>' as login
-        And I enter the incorrect '<Password>' as password
+    Given I enter the '<Username>' as login in 'Login' input
+        And I enter the '<Password>' as password in 'Password' input
         And I click 'Login' button
     Then Validation message is shown
 
