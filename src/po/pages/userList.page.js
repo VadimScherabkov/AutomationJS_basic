@@ -13,13 +13,6 @@ class UserListPage extends BasePage {
     super();
   }
   /**
- * Returns title of the User List page.
- * @return {Element} - Page title.
- */
-  get titlePage() {
-    return $('//h1[contains(text(), "Users List")]');
-  }
-  /**
  * Returns page element.
  * @param {string} param - Page's element.
  * @return {string} - Selector.

@@ -17,7 +17,7 @@ Scenario: Validates mandatory fields
         And Password validation message is shown
 
 @3
-Scenario: Entries the incorrect credentials
+Scenario Outline: Entries the incorrect credentials
     Given I enter the '<Username>' as login in 'Login' input
         And I enter the '<Password>' as password in 'Password' input
         And I click 'Login' button

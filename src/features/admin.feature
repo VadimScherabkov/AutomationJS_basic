@@ -4,7 +4,7 @@
 Feature: AdminUI
 
 @1
-Scenario:Logs in to Admin UI
+Scenario Outline: Logs in to Admin UI
     Given I open 'Login' page
         And I enter the '<Username>' as login in 'Login' input
         And I enter the '<Password>' as password in 'Password' input
