@@ -1,1 +1,8 @@
-node_modules
+node_modules/
+.vscode/
+allure-results/
+allure-report/
+report.json
+report/*.xml
+sreenshots/*.png
+mochawesome-report/*
