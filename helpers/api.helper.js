@@ -15,7 +15,8 @@ const sendRequest = async (url, data = null, method = 'get') => {
         };
     } catch (error) {
         return {
-            status: error.responce.status
+            status: error.response.status,
+            statusText: error.response.statusText,
         };
     };
 };
