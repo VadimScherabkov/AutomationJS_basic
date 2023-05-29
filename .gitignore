@@ -5,4 +5,3 @@ allure-report/
 report.json
 report/*.xml
 sreenshots/*.png
-mochawesome-report/*
