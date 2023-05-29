@@ -1,0 +1,6 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"","LoginPage: Entries the incorrect credentials","","0","0","18","0","0"
+"","AdminUI: Logs in to Admin UI","","0","0","5","0","0"
+"","LoginPage: Opens Login Page and ensures login controls presence","","0","0","7","0","0"
+"","LoginPage: Validates mandatory fields","","0","0","5","0","0"
+"","AdminUI: Existing questions are displayed on the Question Library page","","0","0","4","0","0"
