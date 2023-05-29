@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Introduction to WebdriverIO" timestamp="2023-05-29T17:16:41" time="10.274" tests="5" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Introduction to WebdriverIO"/>
+      <property name="capabilities" value="firefox.113_0_2.windows"/>
+      <property name="file" value="file:///C:/Users/Vadim_Scherbakov/JS/automation-js-basic/automation-js-basic-ui/automation-js-basic/src/test/specs/test.spec.js"/>
+    </properties>
+    <testcase classname="firefox.113_0_2.windows.Introduction_to_WebdriverIO" name="Opens Login Page and ensures login controls presence" time="0.632">
+      <system-out><![CDATA[
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/window/maximize - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/elements - {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
+RESULT: {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/elements - {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
+RESULT: {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
+RESULT: {"using":"xpath","value":"//h2[text()=\"Please login\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/27366d62-2cb4-446e-a5c1-2f04cf305868/text - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
+RESULT: {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/c0d4a029-6101-454d-99f6-b448a96a2cb7/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
+RESULT: {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/b826a62d-37dd-42b4-9b3e-5bdeb9d3badf/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+RESULT: {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/a5b3a69a-3b3f-460f-8021-0070812a50d4/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.113_0_2.windows.Introduction_to_WebdriverIO" name="Validates mandatory fields" time="0.289">
+      <system-out><![CDATA[
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/window/maximize - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+RESULT: {}
+RESULT: {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/a5b3a69a-3b3f-460f-8021-0070812a50d4/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/a5b3a69a-3b3f-460f-8021-0070812a50d4/click - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//p[text()=\"Username is required\"]"}
+RESULT: {"using":"xpath","value":"//p[text()=\"Username is required\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/47c724f3-817a-4513-bce2-b9217ba01a13/text - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//p[text()=\"Password is required\"]"}
+RESULT: {"using":"xpath","value":"//p[text()=\"Password is required\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/214ed943-2ca9-47bb-97c4-ccaef913ae38/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.113_0_2.windows.Introduction_to_WebdriverIO" name="Entries the incorrect credentials" time="5.965">
+      <system-out><![CDATA[
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/window/maximize - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
+RESULT: {}
+RESULT: {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/c0d4a029-6101-454d-99f6-b448a96a2cb7/clear - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/c0d4a029-6101-454d-99f6-b448a96a2cb7/value - {"text":"invalidLogin"}
+RESULT: {"text":"invalidLogin"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
+RESULT: {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/b826a62d-37dd-42b4-9b3e-5bdeb9d3badf/clear - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/b826a62d-37dd-42b4-9b3e-5bdeb9d3badf/value - {"text":"invalidPassword"}
+RESULT: {"text":"invalidPassword"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+RESULT: {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/a5b3a69a-3b3f-460f-8021-0070812a50d4/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/a5b3a69a-3b3f-460f-8021-0070812a50d4/click - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/b979fb74-e6cc-4721-95f7-aadc25838c40/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"p[class=\"help-data\"]"}
+RESULT: {"using":"css selector","value":"p[class=\"help-data\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/b979fb74-e6cc-4721-95f7-aadc25838c40/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.113_0_2.windows.Introduction_to_WebdriverIO" name="Logs in to Admin UI" time="0.95">
+      <system-out><![CDATA[
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/window/maximize - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
+RESULT: {}
+RESULT: {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/c0d4a029-6101-454d-99f6-b448a96a2cb7/clear - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/c0d4a029-6101-454d-99f6-b448a96a2cb7/value - {"text":"scherbv"}
+RESULT: {"text":"scherbv"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
+RESULT: {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/b826a62d-37dd-42b4-9b3e-5bdeb9d3badf/clear - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/b826a62d-37dd-42b4-9b3e-5bdeb9d3badf/value - {"text":"D1l9b2v01Wqwer"}
+RESULT: {"text":"D1l9b2v01Wqwer"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+RESULT: {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/a5b3a69a-3b3f-460f-8021-0070812a50d4/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/a5b3a69a-3b3f-460f-8021-0070812a50d4/click - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
+RESULT: {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
+RESULT: {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
+RESULT: {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/128bb615-9a75-4fcf-8723-9bcfd481664c/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
+RESULT: {"using":"xpath","value":"//h1[contains(text(), \"Users List\")]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/128bb615-9a75-4fcf-8723-9bcfd481664c/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.113_0_2.windows.Introduction_to_WebdriverIO" name="Logs out from Admin UI" time="0.267">
+      <system-out><![CDATA[
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/window/maximize - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//a[@href=\"/Login\"]"}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@href=\"/Login\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/4cb9aabf-cc42-4924-a91e-2c10006daab7/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/4cb9aabf-cc42-4924-a91e-2c10006daab7/click - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".login-form__wrapper"}
+RESULT: {"using":"css selector","value":".login-form__wrapper"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/0c137a20-5169-4678-b981-e07dd706a354/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".login-form__wrapper"}
+RESULT: {"using":"css selector","value":".login-form__wrapper"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/0c137a20-5169-4678-b981-e07dd706a354/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
+RESULT: {"using":"css selector","value":"input[data-testid=\"input-login\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/3b9cfa69-d9b8-462d-857a-0bce75f67060/clear - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/3b9cfa69-d9b8-462d-857a-0bce75f67060/value - {"text":"scherbv"}
+RESULT: {"text":"scherbv"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
+RESULT: {"using":"css selector","value":"input[data-testid=\"input-password\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/2351ff1d-4e77-4358-a34f-e752512a284d/clear - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/2351ff1d-4e77-4358-a34f-e752512a284d/value - {"text":"D1l9b2v01Wqwer"}
+RESULT: {"text":"D1l9b2v01Wqwer"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+RESULT: {"using":"css selector","value":"button[data-testid=\"login-button\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/49540e62-ed45-475d-92b3-ee59af76c8d5/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/49540e62-ed45-475d-92b3-ee59af76c8d5/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="Basic commands" timestamp="2023-05-29T17:16:51" time="9.783" tests="4" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Basic commands"/>
+      <property name="capabilities" value="firefox.113_0_2.windows"/>
+      <property name="file" value="file:///C:/Users/Vadim_Scherbakov/JS/automation-js-basic/automation-js-basic-ui/automation-js-basic/src/test/specs/test.spec.js"/>
+    </properties>
+    <testcase classname="firefox.113_0_2.windows.Basic_commands" name="Existing questions are displayed on the Question Library page" time="4.45">
+      <system-out><![CDATA[
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/window/maximize - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/elements - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/elements - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/b2822fe9-6a0d-4428-afc4-e2f35668384a/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/b2822fe9-6a0d-4428-afc4-e2f35668384a/click - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".questions-table"}
+RESULT: {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".questions-table"}
+RESULT: {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".questions-table"}
+RESULT: {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".questions-table"}
+RESULT: {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".questions-table"}
+RESULT: {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".questions-table"}
+RESULT: {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".questions-table"}
+RESULT: {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".questions-table"}
+RESULT: {"using":"css selector","value":".questions-table"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".questions-table"}
+RESULT: {"using":"css selector","value":".questions-table"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/af0e1c50-ceeb-4a74-b1e4-865255805171/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/elements - {"using":"xpath","value":"//tbody/tr"}
+RESULT: {"using":"xpath","value":"//tbody/tr"}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.113_0_2.windows.Basic_commands" name="Validates Add New Question pop up is opened" time="0.571">
+      <system-out><![CDATA[
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/window/maximize - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//button[text()=\"Add New Question\"]"}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Question\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/07ef1fd2-d0f4-434e-bfa7-a840a9a710e9/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/07ef1fd2-d0f4-434e-bfa7-a840a9a710e9/click - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".add-new-question"}
+RESULT: {"using":"css selector","value":".add-new-question"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/f6976816-dd3e-4945-b6fe-c9e85daa3e57/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".add-new-question"}
+RESULT: {"using":"css selector","value":".add-new-question"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/f6976816-dd3e-4945-b6fe-c9e85daa3e57/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.113_0_2.windows.Basic_commands" name="Save button is disabled in Add New Question pop up" time="0.05">
+      <system-out><![CDATA[
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/window/maximize - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//button[text()=\"Cancel\"]/following-sibling::button"}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//button[text()=\"Cancel\"]/following-sibling::button"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/150d9108-c80a-4a69-b740-9ad5e280cf34/enabled - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.113_0_2.windows.Basic_commands" name="Changes are not saved after closing Add New Question pop up" time="2.274">
+      <system-out><![CDATA[
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/window/maximize - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"div[data-testid=\"questionText\"]"}
+RESULT: {}
+RESULT: {"using":"css selector","value":"div[data-testid=\"questionText\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/da4d94ac-2eca-43a2-80d4-d847c7b7f3b3/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/da4d94ac-2eca-43a2-80d4-d847c7b7f3b3/click - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/actions - {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":"T"},{"type":"keyDown","value":"e"},{"type":"keyDown","value":"s"},{"type":"keyDown","value":"t"},{"type":"keyDown","value":" "},{"type":"keyDown","value":"q"},{"type":"keyDown","value":"u"},{"type":"keyDown","value":"e"},{"type":"keyDown","value":"s"},{"type":"keyDown","value":"t"},"(37 more items)"]}]}
+RESULT: {"actions":[{"id":"action1","type":"key","parameters":{},"actions":[{"type":"keyDown","value":"T"},{"type":"keyDown","value":"e"},{"type":"keyDown","value":"s"},{"type":"keyDown","value":"t"},{"type":"keyDown","value":" "},{"type":"keyDown","value":"q"},{"type":"keyDown","value":"u"},{"type":"keyDown","value":"e"},{"type":"keyDown","value":"s"},{"type":"keyDown","value":"t"},"(37 more items)"]}]}
+COMMAND: DELETE /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/actions - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"[data-testid=\"add-question-alias\"]"}
+RESULT: {"using":"css selector","value":"[data-testid=\"add-question-alias\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/d5a55c48-11a5-4eef-9fa1-56626823053a/clear - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/d5a55c48-11a5-4eef-9fa1-56626823053a/value - {"text":"Test question alias"}
+RESULT: {"text":"Test question alias"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"[data-testid=\"add-question-short-name\"]"}
+RESULT: {"using":"css selector","value":"[data-testid=\"add-question-short-name\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/492bd395-f15a-482e-b143-ec71a7dcb3bc/clear - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/492bd395-f15a-482e-b143-ec71a7dcb3bc/value - {"text":"Test question shortname"}
+RESULT: {"text":"Test question shortname"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"input[name=\"question-keywords\"]"}
+RESULT: {"using":"css selector","value":"input[name=\"question-keywords\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/f7a99061-9b7c-43d2-9a10-85ba96e5b875/clear - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/f7a99061-9b7c-43d2-9a10-85ba96e5b875/value - {"text":"Test question keywords"}
+RESULT: {"text":"Test question keywords"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//button[text()=\"Cancel\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Cancel\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/fbf9dc55-eb24-4606-9c38-854bab64a9d7/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/fbf9dc55-eb24-4606-9c38-854bab64a9d7/click - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//button[text()=\"Add New Question\"]"}
+RESULT: {"using":"xpath","value":"//button[text()=\"Add New Question\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/07ef1fd2-d0f4-434e-bfa7-a840a9a710e9/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/07ef1fd2-d0f4-434e-bfa7-a840a9a710e9/click - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"div[data-testid=\"questionText\"]"}
+RESULT: {"using":"css selector","value":"div[data-testid=\"questionText\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/59b4ddfa-f279-4c84-81be-c971940a53b7/text - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"[data-testid=\"add-question-alias\"]"}
+RESULT: {"using":"css selector","value":"[data-testid=\"add-question-alias\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/c495b10c-c119-4c1b-a69e-d6d29106118f/property/value - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"[data-testid=\"add-question-short-name\"]"}
+RESULT: {"using":"css selector","value":"[data-testid=\"add-question-short-name\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/8df21f28-26e1-4b26-9b1e-84410c7b04f6/property/value - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"input[name=\"question-keywords\"]"}
+RESULT: {"using":"css selector","value":"input[name=\"question-keywords\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/de9e27d7-5f18-4cce-990b-1798762f5e65/property/value - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/refresh - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="Advanced commands" timestamp="2023-05-29T17:17:01" time="6.324" tests="3" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Advanced commands"/>
+      <property name="capabilities" value="firefox.113_0_2.windows"/>
+      <property name="file" value="file:///C:/Users/Vadim_Scherbakov/JS/automation-js-basic/automation-js-basic-ui/automation-js-basic/src/test/specs/test.spec.js"/>
+    </properties>
+    <testcase classname="firefox.113_0_2.windows.Advanced_commands" name="Load spinner disappears after questions are loaded" time="5.103">
+      <system-out><![CDATA[
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/window/maximize - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/elements - {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/elements - {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"/UserList\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/eea961b2-9297-42d8-8a1a-73557408dadb/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/eea961b2-9297-42d8-8a1a-73557408dadb/click - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+RESULT: {"using":"xpath","value":"//a[@href=\"/QuestionLibrary\"]"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/33bd8d80-0664-4dc4-bfe6-5836229e4d9d/displayed - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/33bd8d80-0664-4dc4-bfe6-5836229e4d9d/click - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".table-spinner"}
+RESULT: {"using":"css selector","value":".table-spinner"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/5dcb2d5f-808d-4a68-90ed-5338e1032356/displayed - {}
+RESULT: {}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/5dcb2d5f-808d-4a68-90ed-5338e1032356/displayed - {}
+RESULT: {}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/5dcb2d5f-808d-4a68-90ed-5338e1032356/displayed - {}
+RESULT: {}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/5dcb2d5f-808d-4a68-90ed-5338e1032356/displayed - {}
+RESULT: {}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/5dcb2d5f-808d-4a68-90ed-5338e1032356/displayed - {}
+RESULT: {}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/5dcb2d5f-808d-4a68-90ed-5338e1032356/displayed - {}
+RESULT: {}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/5dcb2d5f-808d-4a68-90ed-5338e1032356/displayed - {}
+RESULT: {}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/5dcb2d5f-808d-4a68-90ed-5338e1032356/displayed - {}
+RESULT: {}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/5dcb2d5f-808d-4a68-90ed-5338e1032356/displayed - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".table-spinner"}
+RESULT: {"using":"css selector","value":".table-spinner"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/5dcb2d5f-808d-4a68-90ed-5338e1032356/displayed - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".table-spinner"}
+RESULT: {"using":"css selector","value":".table-spinner"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/elements - {"using":"xpath","value":"//tbody/tr"}
+RESULT: {"using":"xpath","value":"//tbody/tr"}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.113_0_2.windows.Advanced_commands" name="Search button becomes gray" time="1.187">
+      <system-out><![CDATA[
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/window/maximize - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".admin-btn-search"}
+RESULT: {}
+RESULT: {"using":"css selector","value":".admin-btn-search"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/8d95db8c-35b4-4d44-804c-a2095a6d98e9/rect - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/execute/sync - {"script":"return (function () {\n        return { scrollX: this.pageXOffset, scrollY: this.pageYOffset };\n    }).apply(null, arguments)","args":[]}
+RESULT: {"script":"return (function () {\n        return { scrollX: this.pageXOffset, scrollY: this.pageYOffset };\n    }).apply(null, arguments)","args":[]}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/actions - {"actions":[{"id":"action2","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"}]}]}
+RESULT: {"actions":[{"id":"action2","type":"pointer","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","button":0,"width":0,"height":0,"pressure":0,"tangentialPressure":0,"tiltX":0,"tiltY":0,"twist":0,"altitudeAngle":0,"_":"5 more keys: [\"azimuthAngle\",\"x\",\"y\",\"duration\",\"origin\"]"}]}]}
+COMMAND: DELETE /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/actions - {}
+RESULT: {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":".admin-btn-search"}
+RESULT: {"using":"css selector","value":".admin-btn-search"}
+COMMAND: GET /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element/8d95db8c-35b4-4d44-804c-a2095a6d98e9/css/background-color - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="firefox.113_0_2.windows.Advanced_commands" name="Validates user name in navigation bar" time="0.023">
+      <system-out><![CDATA[
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/window/maximize - {}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/element - {"using":"css selector","value":"li[title=\"Vadim Scherbakov\"]"}
+RESULT: {}
+RESULT: {"using":"css selector","value":"li[title=\"Vadim Scherbakov\"]"}
+COMMAND: POST /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0/execute/sync - {"script":"return ((userName) => {\r\n      return userName.textContent;\r\n    }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"84153089-43dd-4af5-9074-508b35f8af76","ELEMENT":"84153089-43dd-4af5-9074-508b35f8af76"}]}
+RESULT: {"script":"return ((userName) => {\r\n      return userName.textContent;\r\n    }).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"84153089-43dd-4af5-9074-508b35f8af76","ELEMENT":"84153089-43dd-4af5-9074-508b35f8af76"}]}
+COMMAND: DELETE /session/9ec45bea-30b2-4f4a-acea-d0af859c90f0 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

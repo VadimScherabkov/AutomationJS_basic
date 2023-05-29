@@ -3,5 +3,4 @@ node_modules/
 allure-results/
 allure-report/
 report.json
-report/*.xml
 sreenshots/*.png
