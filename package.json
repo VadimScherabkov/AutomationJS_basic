@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx wdio run wdio.conf.js",
-    "wdio": "eslint ./ --fix && rm -rf allure-results/ && wdio run ./wdio.conf.js",
+    "wdio": "rm -rf allure-results/ && wdio run ./wdio.conf.js && allure generate --clean allure-results",
     "lint": "eslint ./ --fix --format json --output-file report.json",
     "allure": "allure generate --clean allure-results && allure open"
   },
