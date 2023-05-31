@@ -223,6 +223,7 @@ exports.config = {
     browser.addCommand('waitAndClick', async function() {
       await this.waitForDisplayed();
       await this.scrollIntoView();
+      await this.waitForClickable();
       await this.click();
     }, true);
     await import('expect-webdriverio');
