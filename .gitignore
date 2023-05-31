@@ -1,6 +1,5 @@
 node_modules/
 .vscode/
-allure-results/
-allure-report/
 report.json
 sreenshots/*.png
+report/
