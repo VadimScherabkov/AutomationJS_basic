@@ -53,17 +53,21 @@ exports.config = {
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
   // https://saucelabs.com/platform/platform-configurator
   //
-  capabilities: [{
-    maxInstances: 1,
-    //
-    browserName: 'chrome',
-    acceptInsecureCerts: true,
-  },
-  {
-    maxInstances: 1,
-    browserName: 'firefox',
-    acceptInsecureCerts: true,
-  },
+  capabilities: [
+    {
+      maxInstances: 1,
+      browserName: 'chrome',
+      acceptInsecureCerts: true,
+      'goog:chromeOptions': {
+        args: ['--headless', '--disable-gpu', '--window-size=1920,1080'],
+      }},
+    {
+      maxInstances: 1,
+      browserName: 'firefox',
+      acceptInsecureCerts: true,
+      'moz:firefoxOptions': {
+        args: ['--headless', '--disable-gpu', '--window-size=1920,1080'],
+      }},
   ],
   //
   // ===================
@@ -218,6 +222,7 @@ exports.config = {
   before: async function(capabilities, specs) {
     browser.addCommand('waitAndClick', async function() {
       await this.waitForDisplayed();
+      await this.scrollIntoView();
       await this.click();
     }, true);
     await import('expect-webdriverio');
